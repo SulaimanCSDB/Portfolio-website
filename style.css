@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --dark: #21252e;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body{
+    font-family: sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+    transition: all 0.1s;
+}
+
+
+.c1 button{ 
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--body);
+    border-radius: 100%;
+    
+}
+
+.dark-mode .navbar{
+    color: #4f4b4bc1;
+}
+
+
+.dark-mode .nav-link {
+    color: #fff;
+}
+
+.dark-mode p{
+    color: #fff;
+}
+
+.dark-mode .card-effect {
+    background-color: #4f4b4bc1;
+}
+
+.dark-mode h5{
+    color:#fff;
+}
+
+.dark-mode form input{
+    background-color:rgba(179, 173, 173, 0.034);
+    
+}
+
+.dark-mode .form-control{
+    background-color:rgba(179, 173, 173, 0.034);
+    
+}
+
+.dark-mode{
+    background-color: #282727;
+    color: #fff;
+}
+
+.dark-mode h1{
+    color: #fff;
+}
+
+.dark-mode .ser {
+    color: #555;
+}
+
+h1,h2,h3,h4,h5,h6,
+.disply-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width:2px;
+    border-radius: 0;
+}
+
+a {
+    color: var(--body);
+    text-decoration: none;
+}
+
+.a1 h6{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.a1 h6:hover{
+    color: var(--primary);
+}
+
+.a2 h6{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.a2 h6:hover{
+    color: var(--primary);
+}
+
+.a3 h6{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.a3 h6:hover{
+    color: var(--primary);
+}
+
+img {
+    width: 100%;
+}
+
+.hero {
+    background-image: url(cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+    
+}
+
+.project img {
+    transition: all 0.4s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.02) ;
+}
+
+.footer-top {
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--dark);
+}
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #242932;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary);
+    border-radius: 100px;
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color:transparent ;
+    border-color: var(--primary);
+
+}
+
